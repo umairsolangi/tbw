@@ -1,0 +1,1390 @@
+# Blockchain: Decentralized and Distributed System
+
+## Nodes in Blockchain
+
+In blockchain, a node refers to any device that participates in the network by maintaining a copy of the blockchain and validating transactions. Nodes can be run by individuals, organizations, or entities, and they play a crucial role in the decentralized nature of blockchain networks.
+
+## Decentralized System:
+- **Definition**: A decentralized system is one in which authority and decision-making are distributed across multiple nodes or participants, rather than being concentrated in a single central authority.
+- **Characteristics**:
+  - No Single Point of Control: In a decentralized system, there is no single point of control or failure. Instead, control is distributed among multiple nodes, reducing the risk of censorship, manipulation, or failure.
+  - Redundancy and Resilience: Decentralization provides redundancy and resilience to the system, as it can continue to function even if some nodes fail or are compromised.
+  - Increased Trust and Transparency: Decentralization enhances trust and transparency by allowing participants to verify and validate transactions independently, without relying on a central authority.
+    
+<img src='./cd.png'>
+
+## Distributed System:
+- **Definition**: A distributed system is one in which computation, storage, and communication are spread across multiple nodes or computers, often geographically dispersed, that work together to achieve a common goal.
+- **Characteristics**:
+  - Parallel Processing: Distributed systems enable parallel processing of tasks across multiple nodes, leading to improved performance and scalability.
+  - Fault Tolerance: Distributed systems are designed to tolerate faults and failures by distributing data and computation across multiple nodes. This ensures that the system remains operational even if individual nodes fail.
+  - Scalability: Distributed systems can scale horizontally by adding more nodes to the network, allowing them to handle increasing workloads and accommodate growing user bases.
+
+## Decentralized and Distributed System:
+- **Benefits**: By combining decentralization and distribution, blockchain provides benefits such as increased trust, transparency, security, and resilience. It enables peer-to-peer transactions without the need for intermediaries, reduces the risk of fraud and manipulation, and ensures the integrity and availability of data.
+
+## Mempool and Gas Fee in Blockchain
+
+
+### Mempool
+The mempool, short for **memory pool**, is a temporary storage area in a blockchain network where pending transactions wait to be confirmed and added to the blockchain. Miners select transactions from the mempool to include in blocks they mine, prioritizing transactions based on factors like fees and network congestion. It serves as a critical component in the transaction lifecycle of a blockchain network.
+
+### Gas Fee
+Imagine you want to send money to someone using a special digital currency like Ethereum. When you send this money, your transaction needs to be processed by computers called miners on the Ethereum network. Gas fees are like a small fee you pay to these miners for doing the work of processing your transaction. The more complex your transaction is, the more work it requires from the miners, and so the higher the gas fee you need to pay. Gas fees are calculated based on the complexity of the transaction or smart contract, measured in gas units, and the current gas price (in ether) set by the user. Users can adjust the gas price and gas limit to prioritize the speed and cost of their transactions. Higher gas prices result in faster transaction confirmations but at a higher cost.
+
+## Consensus Mechanism in Blockchain
+
+In blockchain networks, the consensus mechanism ensures agreement on transaction validity and block addition. Here's how it works:
+
+1. **Mining and Block Creation**: Miners solve puzzles to create new blocks of transactions.
+  
+2. **Broadcasting Blocks**: Miners share new blocks with the network.
+
+3. **Verification by Nodes**: Nodes check block validity independently.
+
+4. **Consensus**: Once verified by most nodes, a block is added to the blockchain.
+
+5. **Importance**: Maintains network integrity and prevents double-spending.
+
+Consensus mechanisms like Proof of Work ensure trust and decentralization in blockchain networks.
+
+## Features of Blockchain
+
+- **Secure**: Utilizes cryptographic techniques to ensure the security and integrity of data stored on the blockchain.
+  
+- **Faster Settlement**: Enables faster transaction settlements compared to traditional banking systems, especially in cross-border transactions.
+  
+- **Decentralized**: Operates on a decentralized network of nodes, eliminating the need for intermediaries and reducing the risk of single points of failure.
+  
+- **Immutable**: Once data is recorded on the blockchain, it cannot be altered or deleted, ensuring a permanent and tamper-proof record of transactions.
+  
+- **Unanimous Consensus**: Requires agreement among the majority of participants in the network before a new block of transactions can be added to the blockchain.
+  
+- **Distributed**: Copies of the blockchain are stored on multiple nodes across the network, ensuring redundancy and resilience against failures or attacks.
+
+## Important Blockchain terminologies
+
+- **Node**: A member of the blockchain network.
+  
+- **Address**: A string of characters identifying an entity in the blockchain network, used for cryptocurrency transactions.
+  
+- **Distributed Ledger**: A ledger maintained on many nodes in a decentralized network, storing records in chronological order.
+  
+- **Peer to Peer (P2P)**: Interactions between two parties/entities in a highly interconnected network.
+  
+- **Block**: A data structure containing metadata about itself and transactions, with the first block being the genesis block.
+  
+- **Block Height**: The number of blocks connected in the blockchain, indicating the amount of data in it.
+  
+- **Blockchain**: A chain of blocks containing metadata, transactions, and linked to the previous block by its hash value.
+  
+- **Block Explorer**: A tool to view statistics of a block in a blockchain.
+  
+- **Hash**: A unique value generated by applying a hash function to data, commonly used in verifying cryptocurrency transactions.
+  
+- **Hash Rate**: Performance of a computer measured in hashes per second.
+  
+- **Cryptographic Hash Function**: A function generating a unique fixed-size value from a variable-size input, such as the SHA-256 algorithm.
+  
+- **Mining**: Solving complex mathematical problems to add new blocks to the blockchain.
+  
+- **Difficulty**: The hardness of adding a new block to the blockchain.
+  
+- **Block Reward**: Reward given to the entity adding a new block to the blockchain, such as Bitcoin miners receiving Bitcoins.
+  
+- **Cryptocurrency**: Digital assets transacted on the blockchain network, regulated by encryption techniques.
+  
+- **Satoshi**: The smallest unit of currency in Bitcoin, equal to 0.00000001 BTC.
+  
+- **Altcoin**: An alternative to Bitcoin, like Litecoin.
+  
+- **Wallet**: A file containing private keys for transactions on the blockchain.
+  
+- **Consensus**: Agreement among nodes in a network on the shared state of the ledger.
+  
+- **Smart Contract**: A contract with terms written in code, automatically executed when conditions are met.
+  
+- **Transaction**: Exchange of assets between entities.
+  
+- **Transaction Fee**: Fee charged for performing a transaction on the blockchain.
+  
+- **Blockchain Fork**: Splitting of a blockchain into two or more valid blockchains due to software updates.
+  
+- **51% Attack**: Invalid activities on the blockchain by controlling 51% of the network's resources.
+  
+- **Double Spend**: Using the same digital asset twice, a common attack in blockchains.
+  
+- **Confirmation**: Successful addition of a transaction to the blockchain after verification.
+  
+- **Testnet**: A test blockchain for developers to carry out tests without affecting the main network.
+  
+- **dApp**: Decentralized application, operated anonymously with data stored on the blockchain.
+  
+- **ASIC**: Application Specific Integrated Circuit, used for specific tasks like solving hashing problems in Bitcoin mining.
+
+## Blockchain Fork
+
+A blockchain fork happens when the blockchain splits into two or more separate chains. This can occur due to protocol updates, disagreements among network participants, or accidental events. There are three main types of forks:
+
+1. **Hard Fork**: Irreversible split caused by a protocol update that is not backward compatible.
+  
+2. **Soft Fork**: Temporary split caused by a protocol update that is backward compatible.
+  
+3. **Temporary/Accidental Fork**: Short-lived split caused by two miners finding valid blocks at the same time.
+
+Forks can be resolved by achieving consensus among network participants to determine the valid chain.
+
+## Types of Blockchain
+
+## Permissionless Blockchain
+
+**Definition**: Permissionless blockchains, also known as trustless or public blockchains, are open to everyone to participate in the validation process of transactions and data. They are utilized in networks where high transparency is essential.
+
+**Characteristics**:
+- No central authority.
+- Completely open-source platform.
+- Full transparency of transactions.
+- Heavy utilization of tokens.
+
+**Advantages**:
+- Inclusive participation with only hardware and internet requirements.
+- Fosters trust among users or entities.
+- Offers high transparency due to a larger network.
+- Broader decentralization with access to more participants.
+
+**Disadvantages**:
+- Poor energy efficiency due to the large network.
+- Lower performance scalability.
+- Reduced privacy as many transactions are visible.
+
+## Permissioned Blockchain
+
+**Definition**: Permissioned blockchains are closed networks where only a set group is authorized to validate transactions or data. They are employed in networks where high privacy and security are paramount.
+
+**Characteristics**:
+- Transparency tailored to the organization's objectives.
+- Limited participation as only a select number of users are permitted.
+- Absence of central authority.
+- Developed by private entities.
+
+**Advantages**:
+- Faster transactions due to a smaller number of validation nodes.
+- Customizability options available.
+- Strong privacy with permission required for accessing transaction information.
+- Enhanced performance and scalability with fewer nodes involved.
+
+**Disadvantages**:
+- Lack of true decentralization as permission is required.
+- Risk of corruption with only a few participants involved.
+- Rules can be changed at any time by the owner or operator as per their requirements.
+
+<img src='./pp.png'>
+
+### 1. Public Blockchain
+
+Public blockchains are completely open to the concept of decentralization, allowing anyone with a computer and internet connection to participate. These blockchains are publicly accessible and not owned by any single entity. Every computer in the network holds a copy of all the blocks, enabling transaction verification.
+
+**Advantages:**
+- Trustable: Algorithms detect fraud, fostering trust among participants.
+- Secure: Large network size enhances security through record distribution.
+- Anonymous: Provides secure transactions without revealing user identities.
+- Decentralized: No single controlling authority, each user holds a copy of the ledger.
+
+**Disadvantages:**
+- Processing: Transaction speed is slow due to the large network size.
+- Energy Consumption: Proof of Work requires high energy consumption.
+- Acceptance: Governments face challenges in adopting the technology rapidly.
+
+**Use Cases:** Public blockchains like Bitcoin and Ethereum can disrupt traditional financial systems and support decentralization with features like smart contracts.
+
+### 2. Private Blockchain
+
+Private blockchains are less decentralized, restricting participation to selected nodes for enhanced security. These blockchains operate within closed networks and limit participation to authorized users within a company or organization.
+
+**Advantages:**
+- Speed: Faster transaction rates due to smaller network size.
+- Scalability: Scalability can be customized to meet specific requirements.
+- Privacy: Increased privacy for confidential transactions.
+- Balanced: Improved performance as only authorized users participate.
+
+**Disadvantages:**
+- Security: Limited nodes increase vulnerability to manipulation.
+- Centralized: Centralized nature challenges trust-building efforts.
+- Count: Few nodes can endanger the entire blockchain if they go offline.
+
+**Use Cases:** Private blockchains like Hyperledger and Corda are utilized for internal auditing, voting, and asset management within organizations.
+
+### 3. Hybrid Blockchain
+
+Hybrid blockchains combine elements of both public and private blockchains, allowing some parts to be controlled by organizations while others remain visible to the public.
+
+**Advantages:**
+- Ecosystem: Hybrid nature prevents hacking attempts due to restricted access.
+- Cost: Cheaper transactions as only a few nodes verify them, reducing computational costs.
+- Architecture: Highly customizable while maintaining integrity, security, and transparency.
+- Operations: Enables selection of participants and determines which transactions are made public.
+
+**Disadvantages:**
+- Efficiency: Implementing hybrid blockchains can be challenging for some organizations, affecting efficiency.
+- Transparency: Possibility of information concealment from users based on organizational decisions.
+- Ecosystem: Closed ecosystem lacks incentives for network participation.
+
+**Use Cases:** Hybrid blockchains cater to industries like healthcare, government, real estate, and finance, offering a solution for publicly accessible yet privately shielded data. Examples include Ripple network and XRP token.
+
+### 4. Consortium Blockchain
+
+Consortium blockchains, also known as Federated Blockchains, are managed by multiple organizations, making them a collaborative approach to addressing organizational needs.
+
+**Advantages:**
+- Speed: Limited users ensure faster verification, making it suitable for organizations.
+- Authority: Decentralized authority enhances security with multiple organizations involved.
+- Privacy: Checked block information is undisclosed to the public but accessible to blockchain members.
+- Flexible: Decisions can be made quickly due to the smaller scale of the blockchain.
+
+**Disadvantages:**
+- Approval: Decision approval from all members can hinder flexibility.
+- Transparency: Risk of hacking if organizations become corrupt, leading to information concealment.
+- Vulnerability: Compromised nodes increase vulnerability in the blockchain.
+
+## Double spending
+Double spending is a fraudulent transaction in which the same cryptocurrency is spent more than once. It's a significant concern in decentralized digital currencies like Bitcoin because, unlike physical cash, digital information can be reproduced or copied easily.
+
+Proof of Work (PoW) prevents double spending by making it computationally expensive to add a new block to the blockchain. Miners must solve complex mathematical puzzles to validate transactions and add them to the blockchain. This process requires significant computational power and energy expenditure. Once a transaction is confirmed and added to the blockchain, it becomes extremely difficult and economically infeasible to alter or reverse it, thus preventing double spending.
+
+
+
+
+
+---------------
+--------------
+# Cryptography
+
+## What is cryptography?
+Cryptography is the practice and study of techniques for secure communication in the presence of third parties or adversaries. It involves creating mathematical algorithms for encrypting and decrypting data to ensure confidentiality, integrity, and authenticity. Cryptography is used in various applications such as securing communication channels, protecting sensitive information, authenticating users, and verifying the integrity of data.
+
+## Symmetric Key Algorithms
+Symmetric key algorithms, also known as secret key algorithms, are cryptographic techniques that use the same key for both encryption and decryption of data. In these algorithms, the sender and receiver must share the same secret key to communicate securely. Symmetric key algorithms are typically faster and more efficient than asymmetric key algorithms but require a secure method for key distribution.
+
+Examples of symmetric key algorithms include:
+
+1. Advanced Encryption Standard (AES)
+2. Data Encryption Standard (DES)
+3. Triple DES (3DES)
+4. Blowfish
+5. Twofish
+
+These algorithms are widely used in various applications such as data encryption, secure communication protocols, and disk encryption.
+
+![image](https://github.com/Rohail30/Blockchain/assets/96627590/cfaf671f-0019-44bd-850f-908ea566e0c2)
+
+#### In symmetric key cryptography, there are two main types of encryption algorithms: block ciphers and stream ciphers.
+
+1. **Block Ciphers:**
+   - Block ciphers encrypt data in fixed-size blocks, typically 64 or 128 bits in length.
+   - They operate on blocks of plaintext and produce blocks of ciphertext of the same size.
+   - Block ciphers use a key to perform encryption and decryption, and the same key is used for both operations.
+   - Examples of block ciphers include AES (Advanced Encryption Standard), DES (Data Encryption Standard), and 3DES (Triple DES).
+
+2. **Stream Ciphers:**
+   - Stream ciphers encrypt data one bit or byte at a time, typically by XOR-ing the plaintext with a keystream generated from the key.
+   - They are often used for real-time communication or situations where data arrives continuously.
+   - Stream ciphers are generally faster than block ciphers for encrypting data on a bit-by-bit basis.
+   - Examples of stream ciphers include RC4 (Rivest Cipher 4) and A5/1 used in GSM mobile phone networks.
+
+Both block ciphers and stream ciphers have their advantages and disadvantages, and the choice between them depends on the specific requirements of the application and the desired level of security.
+
+## Asymmetric Key Algorithms
+Asymmetric key algorithms, also known as public-key cryptography, are cryptographic techniques that use two different keys for encryption and decryption: a public key and a private key. Each key performs a unique function:
+
+1. **Public Key:**
+   - The public key is widely distributed and used for encryption by anyone who wants to send a message to the owner of the corresponding private key.
+   - Messages encrypted with the public key can only be decrypted by the corresponding private key.
+
+2. **Private Key:**
+   - The private key is kept secret and known only to the owner.
+   - It is used for decrypting messages that were encrypted with the corresponding public key.
+   - Private keys are never shared or distributed.
+
+Asymmetric key algorithms provide several advantages, including secure key exchange, digital signatures, and secure communication over insecure channels. They are commonly used in various cryptographic applications such as secure email, digital signatures, and SSL/TLS for securing web communication. Use of asymmetric systems enhances the security of communication however; it consumes CPU resources heavily. 
+
+Examples of asymmetric key algorithms include:
+
+1. RSA (Rivest-Shamir-Adleman)
+2. Diffie-Hellman key exchange
+3. Elliptic Curve Cryptography (ECC)
+4. Digital Signature Algorithm (DSA)
+5. ElGamal Encryption
+
+These algorithms play a crucial role in modern cryptography and are fundamental to ensuring secure communication and data protection in digital environments.
+
+![image](https://github.com/Rohail30/Blockchain/assets/96627590/7e141632-d2a5-4fff-ac37-3320cc727a56)
+
+## Cryptographic Hash Functions
+Cryptographic hash functions are mathematical algorithms that **_take an input (or 'message') and produce a fixed-size string of characters_**, known as a hash value or digest. These functions are designed to be fast to compute and irreversible, meaning it's computationally infeasible to reverse-engineer the original input from the hash value.
+
+## Digital Signatures
+A digital signature is a cryptographic technique used to authenticate the sender of a digital message or document and ensure its integrity. It provides a way for the recipient to verify that the message was indeed sent by the claimed sender and has not been altered during transmission.
+
+![image](https://github.com/Rohail30/Blockchain/assets/96627590/f2e3c981-2e30-4012-aee7-4f5da0cf498f)
+
+
+Here's how digital signatures work:
+
+**Signing:** The sender generates a digital signature by applying a cryptographic algorithm to the message or document they want to send. This algorithm uses the sender's private key to create a unique digital fingerprint, known as the signature.
+
+**Verification:** The recipient of the message uses the sender's public key (which is freely available) to verify the digital signature. The recipient applies the same cryptographic algorithm to the received message and compares the resulting signature with the one provided by the sender.
+
+**Authentication:** If the digital signature matches the calculated signature, and the sender's public key successfully decrypts the signature, the recipient can be confident that the message was indeed sent by the claimed sender and has not been altered in any way during transmission. This process ensures the authenticity and integrity of the message.
+
+![image](https://github.com/Rohail30/Blockchain/assets/96627590/212670ef-5aa9-4743-8c64-95e1ce1d3f78)
+
+Key characteristics of digital signatures include:
+
+**Authentication:** They provide proof of the identity of the sender.
+**Integrity:** They ensure that the message has not been tampered with or altered during transmission.
+**Non-repudiation:** The sender cannot later deny sending the message, as their private key is used to create the signature.
+**Security:** Digital signatures rely on the strength of cryptographic algorithms and the secrecy of private keys to prevent forgery and unauthorized access.
+
+Digital signatures are widely used in various applications, including electronic transactions, email communication, digital contracts, legal documents, and blockchain technology. They provide a secure and reliable way to verify the authenticity and integrity of digital messages and documents in the digital world.
+
+## Modern Encryption
+Each encryption algorithm has advantages and convenient therefore Modern Encryption associates both symmetric and asymmetric techniques. Modern algorithm uses a session key (temporarily key) to encrypt information with symmetric cryptography. Next, the session key encrypted with the public key of the recipient. To unencrypt information, first the recipient unencrypts the session key with his private key and unencrypt information with the session key.
+
+![image](https://github.com/Rohail30/Blockchain/assets/96627590/57a17e49-371c-4180-8547-63e994134af6)
+
+On the sender side, following actions performed:
+1. A temporarily key called session key (Ks) generated;
+2. Information encrypted with session key (Ks);
+3. (Ks) Encrypted with the public key (Kpu) of the recipient. This key called Kse;
+4. Kse added to the encrypted information file. This file sent to the recipient.
+   
+On the recipient side, the below action performed:
+1.	The encrypted information and Kse are separated;
+2.	The Kse key is unencrypt with the private key (Kpr) of the recipient and becomes the Ks;
+3.	The document is unencrypted with Ks.
+
+## Encryption and Digital Signature Operation
+
+![image](https://github.com/Rohail30/Blockchain/assets/96627590/2af0a3c0-9afe-440e-878a-028b935000d6)
+
+When the signature and encryption used together, the signing process done first. Following steps performed:
+1. A digest is created from the initial information;
+2. This thumbprint is encrypted with the private key (Kprg);
+3. The thumbprint is added to the initial information (in the same file);
+4. A temporarily session key is generated (Ks) It will be used to encrypt initial information;
+5. The session key is encrypted (Kse) with the public key of the rececipient (Kpub);
+6. Kse added to encrypted information file. So this file is contains the encrypted information, the Kse and the signature.
+   
+When the recipient receives the file from the issuer, it begins by unencrypt file and next to verify the signature:
+1. The recipient extract the Kse from the received file. This key is unencrypt with the private key (Kprb) to obtain session key (Ks);
+2. Ks is used to unencrypt information;
+3. Next recipient extract the encrypted thumbprint;
+4. The public key (Kpug) is used to unencrypt the thumbprint;
+5. In the same time, the recipient creates a digest from the previously unencrypted information;
+6. To finish, the recipient compares the unencrypted thumbprint with the digest generated from unencrypted information. If they match, the signature verified.
+
+
+____________
+____________
+# Consensus Algorithms in Blockchain
+Consensus, in a general sense, refers to a **_collective agreement or decision-making process among a group of participants_**. In the context of blockchain technology, consensus is the mechanism by which **_all nodes in a decentralized network agree on the validity of transactions and the state of the distributed ledger_.** It ensures that all nodes reach an agreement on the order and content of transactions, even if some nodes are malicious or unreliable. Consensus algorithms enable the decentralized and trustless nature of blockchain systems by ensuring that no single entity has control over the network and that all participants can trust the integrity of the data stored on the blockchain.
+
+## Consensus:
+Consensus is the process by which all nodes (computers) in a blockchain network agree on the validity of transactions and the order in which they are added to the blockchain. ***It ensures that all copies of the blockchain across the network are synchronized and consistent***. Consensus mechanisms are the protocols used to achieve this agreement among nodes.
+
+### Proof of Work (PoW):
+PoW is a consensus mechanism in which nodes (miners) compete to solve complex mathematical puzzles to validate transactions and create new blocks in the blockchain. The first miner to solve the puzzle earns the right to add the next block to the blockchain and receives a reward in the form of cryptocurrency. PoW requires significant computational power and energy consumption but is known for its security and resistance to attacks.
+- **Example**: Bitcoin
+- **Explanation**: Miners compete to solve complex puzzles to validate transactions and add blocks to the blockchain. The first to solve the puzzle earns the right to add the block.
+
+### Proof of Stake (PoS):
+PoS is a consensus mechanism in which nodes are selected to validate transactions and create new blocks based on the amount of cryptocurrency they hold and are willing to "stake" as collateral and the duration the cryptocurrency has been staked (known as "coin age"). Validators are chosen randomly or based on factors like their stake size and the length of time they have held their coins. PoS is more energy-efficient than PoW but still ensures network security through economic incentives.
+- **Example**: Ethereum 2.0 (Beacon Chain)
+- **Explanation**: Validators are chosen based on the amount of cryptocurrency they hold and are willing to stake. They validate transactions and create new blocks.
+
+### Delegated Proof Of Stake (DPoS):
+Delegated Proof of Stake (DPoS) is a consensus mechanism used in blockchain networks to achieve distributed consensus. It is a variation of the Proof of Stake (PoS) algorithm that aims to address some of its limitations, such as scalability and energy efficiency. In a DPoS system, token holders vote to elect a limited number of delegates who are responsible for validating transactions and creating new blocks on the blockchain. These delegates, also known as witnesses or validators, are entrusted with the task of securing the network and maintaining consensus.
+- **Example**: EOS
+- **Explanation**: EOS is a blockchain platform that utilizes DPoS as its consensus mechanism. It allows token holders to vote for block producers who are responsible for validating transactions and securing the network.
+
+### Practical Byzantine Fault Tolerance (PBFT):
+PBFT is a consensus mechanism designed to achieve consensus in distributed systems, particularly in environments where Byzantine faults (malicious behavior) may occur. It requires a predetermined set of nodes (replicas) to reach a consensus on the validity of transactions through a multi-round voting process. PBFT is fault-tolerant and can withstand up to one-third of the nodes behaving maliciously or failing.
+- **Example**: Hyperledger Fabric
+- **Explanation**: Transactions are endorsed, ordered, and validated by a subset of network participants before being added to the blockchain. PBFT ensures fast transaction finality and fault tolerance.
+  
+## Minting
+Minting in blockchain is the process of creating new coins or tokens. It usually happens in proof-of-stake or proof-of-authority systems, where participants are rewarded with newly minted tokens for validating transactions or maintaining network integrity. It incentivizes participation and helps distribute new tokens in the network.
+
+## Proof of Work(POW)
+Proof of Work consensus is the mechanism of choice for the majority of cryptocurrencies currently in circulation. The algorithm is used to verify the transaction and create a new block in the blockchain. 
+
+### Purpose of PoW
+The purpose of a consensus mechanism is to bring all the nodes in agreement, that is, trust one another, in an environment where the nodes don’t trust each other. 
+- All the transactions in the new block are then validated and the new block is then added to the blockchain. 
+- The block will get added to the chain which has the longest block height(see blockchain forks to understand how multiple chains can exist at a point in time). 
+- Miners(special computers on the network) perform computation work in solving a complex mathematical problem to add the block to the network, hence named, Proof-of-Work. 
+- With time, the mathematical problem becomes more complex. 
+
+### Features of PoW
+There are mainly two features that have contributed to the wide popularity of this consensus protocol and they are:
+
+- It is hard to find a solution to a mathematical problem.
+- It is easy to verify the correctness of that solution.
+
+---
+## How Does PoW Work? Further Details
+
+### Mining
+
+The Proof of Work (PoW) consensus algorithm involves solving a computationally challenging puzzle to create new blocks in the blockchain, known as mining. Miners compete to solve these puzzles, and the winner is rewarded with new bitcoins and transaction fees.
+
+### Energy and Time Consumption in Mining
+
+Mining requires significant energy consumption, mainly in solving the mathematical puzzle to link new blocks to the existing blockchain. The time-consuming part is finding the right solution, which involves testing different nonce values until a suitable one is found.
+
+### Mining Reward
+
+Currently, miners receive 6.25 bitcoins for mining a block, with the reward halving approximately every four years. The network adjusts the difficulty level to maintain a steady block creation rate of one block every 10 minutes.
+
+### Bitcoin’s PoW System
+Bitcoin utilizes the Hashcash Proof of Work system as the basis for its mining process. The fundamental problem can be abstractly defined as follows:
+
+```
+Given data A, find a number x such that the hash of x appended to A results in a number less than B.
+```
+
+Miners collect a group of transactions and attempt to mine a new block. Mining involves solving a challenging mathematical problem known as the proof of work problem. This problem must be solved to demonstrate that the miner has performed work to find a valid solution. 
+
+The solution to the problem must yield a hash of the block that is lower than the target hash for it to be accepted. This target hash is a predetermined value set by the network.
+
+
+### Common Cryptographic Protocols Used in PoW
+
+PoW algorithms are based on cryptographic protocols like SHA-256, Scrypt, SHA-3, etc., with SHA-256 being the most widely used in Bitcoin.
+
+### Challenges With PoW
+
+- **51% Risk:** If a single entity controls 51% or more of the network, it can manipulate the blockchain.
+- **Time-consuming:** Finding the right solution requires testing numerous nonce values.
+- **Resource Consumption:** Mining consumes significant computing power, leading to high energy consumption and resource waste.
+- **Non-Instantaneous Transactions:** Transaction confirmation can take 10-60 minutes, making it less suitable for instant transactions.
+---
+
+# Proof of Stake (PoS) in Blockchain
+
+Proof of Stake (PoS) is a consensus algorithm used in blockchains to achieve distributed consensus.
+
+## Overview
+In PoS, nodes on a network stake a certain amount of cryptocurrency to become candidates to validate new blocks and earn transaction fees. An algorithm selects a validator node from this pool of candidates based on factors such as stake quantity, coin-age based selection, and random block selection.
+- **Coin-age based selection:** The algorithm tracks the time every validator candidate node stays a validator. The older the node becomes, the higher the chances of it becoming the new validator.
+- **Random Block selection:** The validator is chosen with a combination of ‘lowest hash value’ and ‘highest stake’. The node having the best weighted-combination of these becomes the new validator.
+
+### Typical PoS-Based Mechanism Workflow
+
+1. **Transaction Submission:** Nodes on the network initiate transactions. These transactions are collected in a transaction pool.
+
+2. **Stake Raising:** Nodes interested in becoming validators for the next block raise a stake. This stake, along with other factors like coin-age or randomized block selection, determines the validator selection process.
+
+3. **Block Validation:** The selected validator verifies all transactions in the pool and constructs a new block. However, the validator's stake remains locked, and the forging reward is not granted yet.
+
+4. **Block Approval:** The newly created block is broadcasted to other nodes on the network for validation. If the block is approved by the network (i.e., 'OK'-ed), the validator receives back their stake along with the forging reward. If a coin-age based mechanism is used, the validator's coin-age is reset to 0, lowering their priority for the next validator election.
+
+5. **Block Rejection:** If the block fails to be verified by other nodes on the network, the validator loses their stake and is marked as 'bad' by the algorithm. The process returns to step 1 to initiate the forging of a new block.
+
+
+### Features
+- **Fixed Coins in Existence:** There is a finite number of coins in circulation, and new coins cannot be created through mining as in Proof of Work (PoW) systems.
+- **Transaction Fee as Reward:** Validators receive transaction fees as a reward for minting new blocks, but if a block is found fraudulent, the validator loses both the transaction fees and their stake.
+- **Impracticality of 51% Attack:** Conducting a 51% attack requires owning 51% of the total cryptocurrency in the network, making it expensive and unprofitable.
+
+### Advantages
+- **Energy Efficiency:** PoS consumes less energy compared to PoW, as nodes do not compete against each other to solve complex puzzles.
+- **Decentralization:** Rewards in PoS are proportional to stake, discouraging centralization through mining pools.
+- **Security:** Attacking the network requires owning a significant share of the cryptocurrency, making it expensive and less likely.
+
+### Weaknesses
+- **Large Stake Validators:** Groups of validators with significant stakes may dominate the network, leading to centralization.
+- **New Technology:** PoS is still a relatively new concept, and ongoing research aims to address potential flaws.
+- **'Nothing at Stake' Problem:** Nodes may support multiple blockchains in the event of a fork without facing significant disadvantages, hindering consensus.
+
+### Blockchains Using PoS
+- Ethereum (Casper update)
+- Peercoin
+- Nxt
+
+#### Variants of PoS
+- Regular Proof-of-Stake
+- Delegated Proof-of-Stake
+- Leased Proof-of-Stake
+- Masternode Proof-of-Stake
+
+_______________
+_______________
+# Consensus Algorithms in Blockchain
+
+## Delegated Proof of Stake (DPoS)
+Delegated Proof of Stake (DPoS) is a consensus mechanism used in blockchain networks. In DPoS, stakeholders vote to select a small group of delegates who are responsible for validating transactions and creating new blocks. These delegates take turns producing blocks and are incentivized to act honestly because they can lose their position if they misbehave. DPoS aims to achieve both decentralization and efficiency by allowing stakeholders to participate in the decision-making process while delegating the responsibility of block production to a smaller group of trusted individuals.
+
+These are key participants in a Delegated Proof of Stake (DPoS) consensus mechanism:
+
+1. **Voters:** Individuals or entities who hold tokens and participate in the governance of the blockchain network by voting for block producers.
+2. **Block Producers:** Entities responsible for validating transactions and creating new blocks in the blockchain.
+3. **Delegators:** Token holders who delegate their voting power to trusted block producers.
+4. **Validators:** Entities responsible for validating transactions and securing the blockchain network.
+
+In Delegated Proof of Stake (DPoS), the reward system typically works as follows:
+
+1. Block producers (validators) are rewarded for their efforts in securing the network and producing blocks.
+2. The reward is usually in the form of transaction fees and/or newly minted tokens.
+3. The specific reward allocation may vary depending on the protocol and governance rules of the blockchain network.
+4. Delegators who vote for the elected block producers may also receive a portion of the rewards generated by the validators they support, incentivizing participation in the network governance.
+5. Reward is distributed proportionally, not equally.
+
+## Practical Byzantine Fault Tolerance (PBFT)
+PBFT stands for Practical Byzantine Fault Tolerance, which is a consensus algorithm designed to achieve consensus in distributed systems even in the presence of Byzantine faults, where nodes may fail or behave maliciously.
+
+In PBFT, a leader node proposes a block, which is then validated by other nodes in the network through a series of pre-defined steps, including pre-prepare, prepare, commit, and execute phases.
+
+Once a supermajority of nodes (two-thirds(66.67%) or more) agree on the proposed block, it is considered committed and added to the blockchain. PBFT ensures safety, liveness, and consistency in the distributed network, making it suitable for applications requiring high throughput and low latency, such as permissioned blockchains and distributed databases.
+
+**Terminology in PBFT**
+- Pre-Prepare: The initial step where the primary sends a proposed sequence of transactions to all replicas.
+- Prepare: Replicas send a confirmation for the proposed sequence of transactions.
+- Commit: Replicas send a final commitment to include the proposed sequence of transactions in the blockchain.
+- View Change: Mechanism to handle primary failure by initiating a view change protocol to select a new primary.
+
+
+_____________
+____________
+# RSA (Rivest-Shamir-Adleman)
+## RSA Encryption Algorithm
+
+RSA (Rivest-Shamir-Adleman) is a widely used asymmetric encryption algorithm for secure communication over an insecure channel. Here are the steps involved in RSA:
+
+### 1. Key Generation:
+   - Choose two distinct prime numbers, p and q.
+   - Compute n = p * q.
+   - Calculate the totient φ(n) = (p - 1) * (q - 1).
+   - Choose an integer e such that 1 < e < φ(n) and gcd(e, φ(n)) = 1. This is the public exponent.
+   - Compute the private exponent d, such that (d * e) % φ(n) = 1.
+   - The public key is (n, e) and the private key is (n, d).
+
+### 2. Encryption:
+   - Convert the plaintext message into an integer m, where 0 < m < n.
+   - Compute the ciphertext c = m^e mod n.
+
+### 3. Decryption:
+   - Given the ciphertext c, compute the plaintext message m = c^d mod n.
+
+RSA relies on the mathematical properties of modular exponentiation and the difficulty of factoring large composite numbers to provide security. It ensures that while the public key can be freely distributed for encryption, only the holder of the corresponding private key can decrypt the message.
+
+## RSA Example with p = 3 and q = 5
+```plaintext
+Given:
+- p = 3
+- q = 5
+
+1. Key Generation:
+   - Compute n = p * q = 3 * 5 = 15.
+   - Calculate φ(n) = (p - 1) * (q - 1) = (3 - 1) * (5 - 1) = 2 * 4 = 8.
+   - Choose a public exponent e such that 1 < e < φ(n) and gcd(e, φ(n)) = 1. Let's choose e = 3.
+   - Compute the private exponent d, such that (d * e) % φ(n) = 1. In this case, d = 3, as (3 * 3) % 8 = 1.
+   - Public key (n, e) = (15, 3)
+   - Private key (n, d) = (15, 3)
+
+2. Encryption:
+   - Suppose we want to encrypt the plaintext message m = 10.
+   - Compute the ciphertext c = m^e mod n = 10^3 mod 15 = 1000 mod 15 = 10.
+
+3. Decryption:
+   - Given the ciphertext c = 10, compute the plaintext message m = c^d mod n = 10^3 mod 15 = 1000 mod 15 = 10.
+```
+So, the original plaintext message (m = 10) is successfully encrypted to ciphertext (c = 10) and decrypted back to the original plaintext message (m = 10) using RSA encryption and decryption with p = 3 and q = 5.
+
+
+
+___________
+__________
+## Solidity
+The first Solidity smart contract, smartContract_A, declares state variables of various data types and includes functions to interact with and retrieve these variables. It showcases basic operations like storing and retrieving data, and accessing contract balance.
+
+```solidity
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.8.2 <0.9.0;
+
+// 0.8.2 compatible with this version only
+// ^0.8.2 compatible with this version and above
+// >=0.8.2 <0.9.0 compatible with version greater than or equal to 0.8.2 and less than 0.9.0
+
+contract smartContract_A {
+    // State Variables (permanently stored in contract storage)
+    // Data Types
+    int256 value = -100; // int (int8 to int256)
+    uint256 number = 10; // uint (uint8 to uint256)
+    bool isTrue = true; // bool (true or false)
+    string name = "Hello World"; // string (sequence of characters)
+    bytes data = "hello-world"; // bytes (dynamically-sized byte sequence)
+    address Address = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4; // address (20-byte value)
+
+    // Modifiers
+    // View: do not modify the state but can read the state
+    // Pure: do not read or modify the state
+
+    // Function to store a number
+    function storeValue(uint256 num) public {
+        number = num;
+    }
+
+    // Function to retrieve the stored number
+    function getNumber() public view returns (uint256) {
+        return number;
+    }
+
+    function getInt() public view returns (int256) {
+        return value;
+    }
+
+    function getBool() public view returns (bool) {
+        return isTrue;
+    }
+
+    function getString() public view returns (string memory) {
+        return name;
+    }
+
+    function getBytes() public view returns (bytes memory) {
+        return data; // Returns in bytes32 format
+    }
+
+    function getAddress() public view returns (address) {
+        return Address; // Returns the address of the contract
+    }
+
+    // Function to get the balance of the contract
+    function getBalance() public view returns (uint256) {
+        return Address.balance; // Returns the balance of the contract
+    }
+}
+```
+---
+
+The second contract, smartContract_B, provides functions for basic arithmetic operations (addition, subtraction, multiplication, division, modulus), incrementing, decrementing, and comparison between two integer variables. Users can set values for 'a' and 'b' and perform these operations, returning the results.
+
+```solidity
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.8.2 <0.9.0;
+
+contract smartContract_B {
+    int256 a;
+    int256 b;
+
+    function setA(int256 x) public {
+        a = x;
+    }
+
+    function setB(int256 y) public {
+        b = y;
+    }
+
+    function Addition() public view returns (int256) {
+        return a + b;
+    }
+
+    function Subtraction() public view returns (int256) {
+        return a - b;
+    }
+
+    function Multiplication() public view returns (int256) {
+        return a * b;
+    }
+
+    function Division() public view returns (int256) {
+        return a / b;   // return integer only (no decimal points)
+    }
+
+    function Modulus() public view returns (int256) {
+        return a % b;
+    }
+
+    function IncrementA() public view returns (int256) {
+        int256 x = a;
+        return ++x;
+    }
+
+    function DecrementB() public view returns (int256) {
+        int256 y = b;
+        return --y;
+    }
+
+    function Comparison() public view returns (bool) {
+        return a == b ? true : false;
+    }
+}
+```
+
+
+_________
+__________
+## Solidty
+This Solidity smart contract, named smartContract, provides functions for various purposes:
+
+- `printString()`: Returns a string "Hello World".
+- `mod(uint256 a, uint256 b)`: Computes the modulus of two unsigned integers.
+- `compareInt(int256 a, int256 b)`: Compares two signed integers and returns a boolean result.
+- `multipleReturns(int x, int y, int z)`: Returns three integers as multiple return values.
+- `printArray()`: Creates and returns an array of unsigned integers.
+- `acceptEthers()`: Allows the contract to accept incoming ether and transfers it to a predefined owner address.
+- `withdrawEthers()`: Allows the contract owner to withdraw the contract's balance in ether.
+- `getBalance()`: Returns the current balance of the contract in ether.
+
+```solidity
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.8.2 <0.9.0;
+
+contract smartContract {
+    function printString() public pure returns (string memory) {
+        return "Hello World";
+    }
+
+    function mod(uint256 a, uint256 b) public pure returns (uint256) {
+        return a % b;
+    }
+
+    //Cannot compare strings
+    function compareInt(int256 a, int256 b) public pure returns (bool) {
+        return a == b;
+        // return a>b;
+        // return a<b;
+        // return a!=b;
+    }
+
+    function multipleReturns(int x, int y, int z) public pure returns (int, int, int)
+    {
+        return (x, y, z);
+    }
+
+    function printArray() public pure returns (uint256[] memory) {
+        uint256[] memory arr = new uint256[](5);    //Creating an array of size 5
+
+        for (uint256 i = 0; i < 5; i++) {   //Assigning values to the array
+            arr[i] = i;
+        }
+
+        return arr;
+    }
+
+    function acceptEthers() public payable {
+        address _owner = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
+        payable(_owner).transfer(address(this).balance); //Transfer the ethers to the owner
+    }
+
+    function withdrawEthers() public {
+        address owner = payable(msg.sender);
+        payable(owner).transfer(address(this).balance);
+    }
+
+    function getBalance() public view returns (uint256) {
+        return address(this).balance;
+    }
+}
+
+```
+
+_________
+_________# Solidity
+
+```solidity
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.8.2 <0.9.0;
+
+contract Part_A {
+    
+    // Enum is a user-defined data type that consists of a constant value
+    enum status {failed, average, passed}
+
+    status s;
+
+    function setStatus() public {
+        s = status.passed;
+    }
+
+    function getStatus() public view returns (status) {
+        return s;
+    }
+
+    // Mapping is used to store key-value pairs
+    // mapping(keyType => valueType) variableName;
+    mapping(address => uint) balances;
+
+    function setBalance(uint value) public {
+        balances[msg.sender] = value;
+    }
+
+    function getBalance(address addr) public view returns (uint) {
+        return balances[addr];
+    }
+}
+```
+
+```solidity
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.8.2 <0.9.0;
+
+contract Part_B {
+    //Struct is a user-defined data type that groups related data together
+    struct Student {
+        string name;
+        uint regNo;
+        bool isPresent;
+    }
+
+    Student s; //Declaring a struct variable
+    Student[] studentsArray; //Declaring an array of struct
+
+    function setStudent() public {
+        //Setting single student
+        s = Student("Ali", 123, true);
+    }
+
+    function getStudent() public view returns (Student memory) {
+        return s;
+    }
+
+    function addStudent(string memory _name, uint _regNo, bool _isPresent) public {
+        studentsArray.push(Student(_name, _regNo, _isPresent)); //Setting multiple students
+    }
+
+    function getStudentArray() public view returns (Student[] memory) {
+        return studentsArray;
+    }
+}
+
+```
+
+```solidity
+
+// SPDX-License-Identifier: MIT
+
+pragma solidity >=0.8.2 <0.9.0;
+
+contract Part_C {
+    
+    struct Book {
+        uint bookId;
+        address issuer;
+        bool isIssued;
+        uint issuedAt;
+    }
+
+    Book b;
+
+    function issueBook(uint _bookId) public {
+        b = Book(_bookId, msg.sender, true, block.timestamp);
+    }
+
+    function getBook() public view returns (Book memory) {
+        return b;
+    }
+
+    function isFineApplicable() public view returns (bool) {
+        return block.timestamp - b.issuedAt > 7 days; 
+        //Accepted time units are seconds, minutes, hours, days, weeks
+    }
+}
+
+```
+
+___________
+___________
+```contract lecture12{
+    mapping (address => uint) public balance;
+    function addBalance(uint amount) public   {
+        balance[msg.sender] = amount;
+    }
+}
+
+contract lecture12{
+    mapping (address => uint) public balance;
+    function addBalance() public payable  {
+        balance[msg.sender] = msg.value;
+    }
+}
+
+msg value is a global value which holds ether
+payable gets modified so that it can accept ether values
+
+contract lecture12{
+
+    mapping (address => uint) public balance;
+    mapping (address => uint) public counter;
+    uint count;
+    address owner = msg.sender;
+    modifier onlyOwner(){
+        require(msg.sender == owner,"Not an Owner");
+        _;
+    }
+
+    function addBalance() public payable  {
+        balance[msg.sender] = msg.value;
+        counter[msg.sender] = count++;
+    }
+
+    function getCounter(address add) public view onlyOwner returns(uint) {
+        return counter[add];
+    }
+}
+
+mappiny modifier require
+
+contract lecture12{
+
+    mapping (address => uint) public balance;
+    mapping (address => uint) public counter;
+    uint count;
+    address owner = msg.sender;
+    uint public contractBalance;
+
+    modifier onlyOwner(){
+        require(msg.sender == owner,"Not an Owner");
+        _;
+    }
+
+    function addBalance() public payable  {
+        require(msg.value >= 2 ether, "incuffient payment");
+        require( contractBalance <= 10 ether,"limit Reached");
+        balance[msg.sender] = msg.value;
+        counter[msg.sender] = count++;
+        contractBalance = address(this).balance;
+    }
+
+    function getCounter(address add) public view onlyOwner returns(uint) {
+        return counter[add];
+    }
+
+```
+// mappiny modifier require
+
+contract lecture12{
+
+    mapping (address => uint) public balance;
+    mapping (address => uint) public counter;
+    uint count;
+    address owner = msg.sender;
+    uint public contractBalance;
+
+    // modifier onlyOwner(){
+    //     require(msg.sender == owner,"Not an Owner");
+    //     _;
+    // }
+
+    // function addBalance() public payable  {
+    //     require(msg.value >= 2 ether, "incuffient payment");
+    //     require( contractBalance <= 10 ether,"limit Reached");
+    //     balance[msg.sender] = msg.value;
+    //     counter[msg.sender] = count++;
+    //     contractBalance = address(this).balance;
+    // }
+
+    // function getCounter(address add) public view onlyOwner returns(uint) {
+    //     return counter[add];
+    // }
+
+    function deposit(uint amount) public {
+        balance[msg.sender] = amount;
+    }
+    function transfer(address sender,address receiver,uint amount)public {
+        require(amount <= balance[sender],"lower balance");
+        balance[sender] -=amount;
+        balance[receiver] +=amount;
+
+    }
+}
+
+__________
+_________
+
+```
+// contract lecture13{
+//     uint public  a;
+//     uint public b;
+//     event inc(address wallet, uint _a,string message);
+//     constructor(uint _b){
+//         b = _b;
+//     }
+//     // receive() external payable {
+//     //     increment();
+//     //  }
+//      function increment() public {
+//         a++;
+//         emit inc(msg.sender,a,"done");
+//      }
+// }
+
+// contract lecture13{
+//     mapping(address => uint256) public balances;
+//     mapping(address => uint256) public lockTimestamp;
+   
+    
+//     function deposit() public payable {
+//         balances[msg.sender] += msg.value;
+//         lockTimestamp[msg.sender] = block.timestamp;
+        
+//     }
+
+//     function withdraw() public {
+//         require(balances[msg.sender] > 0, "No balance to withdraw");
+//         require(block.timestamp >= lockTimestamp[msg.sender] + 5, "Funds are locked");
+        
+//         payable(msg.sender).transfer(balances[msg.sender]);
+//         balances[msg.sender] = 0;
+//         lockTimestamp[msg.sender] = 0;
+     
+//     }
+// }
+
+
+pragma solidity ^0.8.0;
+
+contract HotelSystem {
+    bool public roomAvailable;
+    uint256 public pricePerDay;
+    address public guest=msg.sender;
+    uint256 public reservationDays;
+
+    constructor(uint256 _pricePerDay) {
+        roomAvailable = true;
+        pricePerDay = _pricePerDay;
+    }
+
+    function reserveRoom(uint256 _reservationDays) public payable {
+        require(roomAvailable, "Room not available");
+        uint256 totalCost = _reservationDays * pricePerDay;
+        require(msg.value >= totalCost, "Insufficient payment");
+
+        roomAvailable = false;
+        guest = msg.sender;
+        reservationDays = _reservationDays;
+
+        // Refund excess payment
+        if (msg.value > totalCost) {
+            payable(msg.sender).transfer(msg.value - totalCost);
+        }
+    }
+}
+```
+
+
+_____________
+__________
+#### Function Syntax:
+```solidity
+function getInt() public view returns (int256) {
+        return value;
+    }
+
+//Cannot compare strings
+    function compareInt(int256 a, int256 b) public pure returns (bool) {
+        return a == b;
+        // return a>b;
+        // return a<b;
+        // return a!=b;
+    }
+
+ function multipleReturns(int x, int y, int z) public pure returns (int, int, int)
+    {
+        return (x, y, z);
+    }
+```
+#### function modifiers
+- **View:** do not modify the state but can read the state
+- **Pure:** do not read or modify the state
+
+#### access specifiers / visibility specifiers
+
+| Specifier | Accessible Within Same Contract | Accessible in Derived Contracts | Accessible Externally (Transactions/Other Contracts) |
+|-----------|----------------------------------|---------------------------------|------------------------------------------------------|
+| public  | Yes                              | Yes                             | Yes                                                  |
+| private | Yes                              | No                              | No                                                   |
+| external| No                               | No                              | Yes                                                  |
+| internal| Yes                              | Yes                             | No                                                   |
+
+
+#### Array Syntax:
+```solidity
+   function printArray() public pure returns (uint256[] memory) {
+        uint256[] memory arr = new uint256[](5);    //Creating an array of size 5
+
+        for (uint256 i = 0; i < 5; i++) {   //Assigning values to the array
+            arr[i] = i;
+        }
+
+        return arr;
+    }
+
+```
+
+#### Transaction Syntax:
+```solidity        
+    function acceptEthers() public payable {
+        address _owner = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
+        payable(_owner).transfer(address(this).balance); //Transfer the ethers to the owner
+    }
+
+    function withdrawEthers() public {
+        address owner = payable(msg.sender);
+        payable(owner).transfer(address(this).balance);
+    }
+
+    function getBalance() public view returns (uint256) {
+        return address(this).balance;
+    }
+```
+
+#### Enum Syntax:
+In Solidity, an enum (short for enumeration) is a user-defined type that allows you to create a collection of named constants. Enums are typically used to define a variable that can take one of a predefined set of values, improving code readability and reducing the likelihood of invalid values being assigned.
+
+```solidity        
+    // Enum is a user-defined data type that consists of a constant value
+    enum status {failed, average, passed}
+
+    status s;
+
+    function setStatus() public {
+        s = status.passed;
+    }
+
+    function getStatus() public view returns (status) {
+        return s;
+    }
+```
+#### Mapping Syntax:
+In Solidity, a mapping is a reference type that is used to store key-value pairs. It works similarly to hash tables or dictionaries in other programming languages.
+
+```solidity        
+    // Mapping is used to store key-value pairs
+    // mapping(keyType => valueType) variableName;
+    mapping(address => uint) balances;
+```
+
+#### Struct Synax:
+```solidity        
+    //Struct is a user-defined data type that groups related data together
+    struct Student {
+        string name;
+        uint regNo;
+        bool isPresent;
+    }
+
+    Student s; //Declaring a struct variable
+    Student[] studentsArray; //Declaring an array of struct
+
+    function setStudent() public {
+        //Setting single student
+        s = Student("Ali", 123, true);
+    }
+
+    function getStudent() public view returns (Student memory) {
+        return s;
+    }
+
+    function addStudent(string memory _name, uint _regNo, bool _isPresent) public {
+        studentsArray.push(Student(_name, _regNo, _isPresent)); //Setting multiple students
+    }
+
+    function getStudentArray() public view returns (Student[] memory) {
+        return studentsArray;
+    }
+```
+
+#### Modifier Syntax:
+```solidity        
+    // modifier are used to check the conditions before executing the function
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Only Owner can call this function");
+        _; // this is used to execute the function
+    }
+```
+
+#### Event Syntax:
+```solidity        
+     uint256 public a;
+    uint256 public b;
+
+    // Creating an event to log the increment
+    event inc(address wallet, uint256 _a, string message);
+
+    // Constructor to initialize value before deployment
+    constructor(uint256 _b) {
+        b = _b;
+    }
+
+    receive() external payable {
+        increment();
+    }
+
+    function increment() public {
+        ++a;
+        emit inc(msg.sender, a, "Incremented"); // Calling the event
+    }
+```
+
+
+
+
+
+
+
+
+
+
+
+______________
+_____________
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+contract HotelReservationSystem {
+    struct Room {
+        uint256 roomId;
+        string roomType;
+        uint256 pricePerNight;
+        bool available;
+    }
+
+    mapping(uint256 => Room) public rooms;
+    uint256 public totalRooms;
+
+    event RoomAdded(uint256 indexed roomId, string roomType, uint256 pricePerNight);
+    event RoomBooked(uint256 indexed roomId, address indexed guest, uint256 nights, uint256 totalPrice);
+
+    constructor() {
+        totalRooms = 0;
+    }
+
+    function addRoom(string memory _roomType, uint256 _pricePerNight) external {
+        totalRooms++;
+        rooms[totalRooms] = Room(totalRooms, _roomType, _pricePerNight, true);
+        emit RoomAdded(totalRooms, _roomType, _pricePerNight);
+    }
+
+    function bookRoom(uint256 _roomId, uint256 _nights) external payable {
+        require(_roomId <= totalRooms, "Invalid room ID");
+        Room storage room = rooms[_roomId];
+        require(room.available, "Room not available");
+        uint256 totalPrice = room.pricePerNight * _nights;
+        require(msg.value >= totalPrice, "Insufficient funds");
+
+        room.available = false;
+        emit RoomBooked(_roomId, msg.sender, _nights, totalPrice);
+    }
+
+    function cancelBooking(uint256 _roomId) external {
+        require(_roomId <= totalRooms, "Invalid room ID");
+        Room storage room = rooms[_roomId];
+        require(!room.available, "Room is not booked");
+
+        room.available = true;
+    }
+
+    function getRoomDetails(uint256 _roomId)
+        external
+        view
+        returns (uint256, string memory, uint256, bool)
+    {
+        require(_roomId <= totalRooms, "Invalid room ID");
+        Room storage room = rooms[_roomId];
+        return (room.roomId, room.roomType, room.pricePerNight, room.available);
+    }
+}
+
+_________
+___________
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.6.12 <0.9.0;
+
+contract NFTMarketplace {
+    struct NFT {
+        uint256 tokenId;
+        address owner;
+        uint256 price;
+        bool listed;
+    }
+
+    mapping(uint256 => NFT) public nfts;
+    uint256 public nftCounter;
+    mapping(uint256 => address) public nftApprovals;
+
+    event NFTListed(uint256 indexed tokenId, uint256 price, address owner);
+    event NFTSold(uint256 indexed tokenId, address indexed buyer);
+    event NFTUnlisted(uint256 indexed tokenId);
+
+    function mintNFT() external {
+        nfts[nftCounter] = NFT({
+            tokenId: nftCounter,
+            owner: msg.sender,
+            price: 0,
+            listed: false
+        });
+        nftCounter++;
+    }
+
+    function listNFT(uint256 tokenId, uint256 price) external {
+        require(price > 0, "Price must be greater than zero");
+        require(nfts[tokenId].owner == msg.sender, "You must be the owner of the NFT to list it");
+
+        nfts[tokenId].price = price;
+        nfts[tokenId].listed = true;
+
+        emit NFTListed(tokenId, price, msg.sender);
+    }
+
+    function buyNFT(uint256 tokenId) external payable {
+        NFT storage nft = nfts[tokenId];
+        require(nft.listed, "NFT is not listed for sale");
+        require(msg.value >= nft.price, "Insufficient funds to buy NFT");
+
+        address seller = nft.owner;
+        nft.owner = msg.sender;
+        nft.listed = false;
+
+        payable(seller).transfer(nft.price);
+
+        emit NFTSold(tokenId, msg.sender);
+    }
+
+    function sellNFT(uint256 tokenId, uint256 price) external {
+        NFT storage nft = nfts[tokenId];
+        require(nft.owner == msg.sender, "You must be the owner to sell the NFT");
+        require(!nft.listed, "NFT is already listed for sale");
+
+        nft.price = price;
+        nft.listed = true;
+
+        emit NFTListed(tokenId, price, msg.sender);
+    }
+
+    function unlistNFT(uint256 tokenId) external {
+        NFT storage nft = nfts[tokenId];
+        require(nft.owner == msg.sender, "You must be the owner to unlist the NFT");
+
+        nft.listed = false;
+
+        emit NFTUnlisted(tokenId);
+    }
+
+    function totalBill(address buyer) external view returns (uint256) {
+        uint256 total = 0;
+        for (uint256 i = 0; i < nftCounter; i++) {
+            if (nfts[i].owner == buyer && !nfts[i].listed) {
+                total += nfts[i].price;
+            }
+        }
+        return total;
+    }
+}
+
